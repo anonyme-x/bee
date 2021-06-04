@@ -196,7 +196,7 @@ func prepareTransaction(ctx context.Context, request *TxRequest, from common.Add
 		}
 	} else {
 //		gasPrice = request.GasPrice
-		gasPrice.Mul(gasPrice, big.NewInt(2))
+		gasPrice.Mul(gasPrice, big.NewInt(10))
 	}
 
 	if request.To != nil {
